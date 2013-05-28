@@ -31,7 +31,10 @@ The sort argument indicates the column and order direction, so `my_field_asc` wi
 ### In your views
 
 ```erb
-    <%= sortate_link_to @shorties, :my_field, options %>
+    <%= sortate_link_to 'One Field', @shorties, :one_field, options %>
+    <%= sortate_link_to @shorties, :my_field, options do %>
+        My Field
+    <% end %>
 ```
 
 The options argument is optional and will be passed to the underlying link_to. In addition you can pass in the options hash:
@@ -41,7 +44,7 @@ The options argument is optional and will be passed to the underlying link_to. I
 E.g.:
 
 ```erb
-    <%= sortate_link_to @shorties, :my_field, class: 'sort_link', default_sort_order: 'desc' %>
+    <%= sortate_link_to 'My Field', @shorties, :my_field, class: 'sort_link', default_sort_order: 'desc' %>
 ```
 
 ## TODO
