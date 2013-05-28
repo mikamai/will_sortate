@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "will_sortate"
   spec.version       = WillSortate::VERSION
   spec.authors       = ["Nicola Racco"]
-  spec.email         = ["nicola@nicolaracco.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["nicola@mikamai.com"]
+  spec.description   = %q{WillSortate is a sorting engine for Rails 3, useful to give your views the power to sort collections}
+  spec.summary       = %q{A sorting engine plugin for Rails 3}
+  spec.homepage      = "https://github.com/mikamai/kaminari"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
